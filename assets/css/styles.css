@@ -1,0 +1,39 @@
+/* Keep custom CSS minimal.
+   Use this file for layout glue, readability, and future-proofing. */
+
+.site-header {
+    @apply border-b border-neutral-200 bg-white;
+}
+
+.header-inner {
+    @apply mx-auto flex max-w-5xl items-center justify-between gap-6 px-5 py-4;
+}
+
+.site-brand {
+    @apply flex flex-col;
+}
+
+.site-title {
+    @apply text-lg font-semibold leading-tight;
+}
+
+.site-location {
+    @apply text-sm text-neutral-600;
+}
+
+/* Navigation: hidden on small screens by default (we can add a simple mobile solution later) */
+.site-nav {
+    @apply hidden md:block;
+}
+
+.site-nav ul {
+    @apply flex items-center gap-6 text-sm;
+}
+
+.site-nav a {
+    @apply hover:underline;
+}
+
+.contact-button {
+    @apply inline-flex items-center justify-center rounded border border-neutral-900 px-4 py-2 text-sm hover:bg-neutral-100;
+}
